@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Header from './components/Header';
 import App from './components/App';
 import Body from './components/Body';
 import MyComponent from './components/MyComponent';
@@ -8,6 +9,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Header />
     <App />
     <Body />
     <MyComponent />

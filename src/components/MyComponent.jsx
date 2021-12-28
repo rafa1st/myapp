@@ -4,12 +4,12 @@ class MyComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-        field: 'campo a ser mostrado'
-    }
+      field: "campo a ser mostrado",
+    };
   }
 
   render() {
-      const field = this.state.field
+    const field = this.state.field;
     return (
       <div>
         <p>Nome {field}</p>
