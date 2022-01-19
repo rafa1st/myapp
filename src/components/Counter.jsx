@@ -1,18 +1,22 @@
-import "../style/Counter.css";
 import React from "react";
+import "../style/Counter.css";
 
-class Counter extends React.Components {
+
+class Counter extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      counter: 0,
+      counter: [],
     };
   }
 
-  render() {
-      const counter = this.counter;
-    <div>
-      <h1>Counter: {counter}</h1>
-    </div>;
+  render() {    
+    return (
+      <div>
+        <h2>Counter: {this.state.counter}</h2>
+      </div>
+    );
   }
 }
+
+export default Counter;

@@ -1,11 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import Header from './components/Header';
-import App from './components/App';
-import Body from './components/Body';
-import MyComponent from './components/MyComponent';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import reportWebVitals from "./reportWebVitals";
+import "./index.css";
+import Header from "./components/Header";
+import App from "./components/App";
+import Body from "./components/Body";
+import MyComponent from "./components/MyComponent";
+import TodoApp from "./components/TodoApp";
+import Counter from "./components/Counter";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,8 +15,10 @@ ReactDOM.render(
     <App />
     <Body />
     <MyComponent />
+    <TodoApp />
+    <Counter />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
