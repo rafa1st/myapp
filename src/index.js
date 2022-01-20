@@ -9,6 +9,7 @@ import MyComponent from "./components/MyComponent";
 import TodoApp from "./components/TodoApp";
 import Counter from "./components/Counter";
 
+
 ReactDOM.render(
   <React.StrictMode>
     <Header />
@@ -16,7 +17,7 @@ ReactDOM.render(
     <Body />
     <MyComponent />
     <TodoApp />
-    <Counter />
+    <Counter />    
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -10,11 +10,10 @@ class TodoApp extends React.Component {
 
   render() {
     return (
-      <div>
-        <h3>Tarefas</h3>
-        <TodoList items={this.state.items} />
+      <div>        
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="new-todo">O que precisa ser feito?</label>
+          <br/>
           <input
             id="new-todo"
             onChange={this.handleChange}
@@ -22,6 +21,8 @@ class TodoApp extends React.Component {
           />
           <button>Adicionar #{this.state.items.length + 1}</button>
         </form>
+        <h3>Tarefas</h3>
+        <TodoList items={this.state.items} />
       </div>
     );
   }
