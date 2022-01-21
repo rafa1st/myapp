@@ -1,0 +1,63 @@
+.buttonIncrease {
+  background-color: #fff;
+  border: 2px solid #008cba;
+  color: black;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  margin: 4px 2px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.buttonIncrease:hover {
+  background-color: #008cba;
+  color: white;
+}
+
+.buttonDecrease {
+  background-color: #fff;
+  border: 2px solid #f44336;
+  color: black;
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  margin: 4px 2px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.buttonDecrease:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.buttonReset {
+    background-color: #fff;
+    border: 2px solid #4CAF50;
+    color: black;
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 4px 2px;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  
+  .buttonReset:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  

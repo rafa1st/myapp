@@ -1,14 +1,14 @@
-import '../style/NavBar.css';
+import "../style/NavBar.css";
 
-const NavBar = (props) => {
-    return (
+function NavBar(props) {
+  return (
     <div>
-        <h1>{props.name}</h1>
+      <p>NavBar</p>
+      <h1>{props.name}</h1>
+      <p>End NavBar</p>
     </div>
-    );
-};
+  );
+}
 
-NavBar.defaultProps = { name: "this is the nav default props."}
-
-
+NavBar.defaultProps = { name: "Nav default props." };
 export default NavBar;

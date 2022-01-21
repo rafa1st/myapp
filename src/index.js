@@ -8,11 +8,13 @@ import Body from "./components/Body";
 import MyComponent from "./components/MyComponent";
 import TodoApp from "./components/TodoApp";
 import Counter from "./components/Counter";
+import NavBar from "./components/NavBar";
 
 
 ReactDOM.render(
   <React.StrictMode>
     <Header />
+    <NavBar />
     <App />
     <Body />
     <MyComponent />
