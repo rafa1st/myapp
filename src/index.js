@@ -9,7 +9,7 @@ import MyComponent from "./components/MyComponent";
 import TodoApp from "./components/TodoApp";
 import Counter from "./components/Counter";
 import NavBar from "./components/NavBar";
-
+import PaiComponent from "./components/PaiComponent";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,9 +17,10 @@ ReactDOM.render(
     <NavBar />
     <App />
     <Body />
-    <MyComponent />
     <TodoApp />
-    <Counter />    
+    <PaiComponent />
+    <MyComponent />
+    <Counter />
   </React.StrictMode>,
   document.getElementById("root")
 );

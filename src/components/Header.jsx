@@ -1,6 +1,4 @@
-import "../style/Header.css";
-
-function Header() {
+export default function Header() {
   const clock = Date();
   return (
     <div>
@@ -8,5 +6,3 @@ function Header() {
     </div>
   );
 }
-
-export default Header;

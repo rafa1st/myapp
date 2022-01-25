@@ -1,21 +1,18 @@
-import React from "react";
+import { useState } from "react";
+import "../style/DefaultStyle.css";
 
-class MyComponent extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      field: "campo a ser mostrado",
-    };
-  }
+export default function MyComponent() {
+  const [field, setField] = useState("Frase inicial");
 
-  render() {
-    const field = this.state.field;
-    return (
-      <div>
-        <p>Nome {field}</p>
-      </div>
-    );
-  }
+  return (
+    <div className="BasicStyle">
+      <p>Nome {field}</p>
+      <button
+        type="button"
+        onClick={() => setField("outra frase a ser mostrada.")}
+      >
+        Troca o Campo
+      </button>
+    </div>
+  );
 }
-
-export default MyComponent;

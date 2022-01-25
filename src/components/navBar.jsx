@@ -1,6 +1,6 @@
 import "../style/NavBar.css";
 
-function NavBar(props) {
+export default function NavBar(props) {
   return (
     <div>
       <p>NavBar</p>
@@ -11,4 +11,3 @@ function NavBar(props) {
 }
 
 NavBar.defaultProps = { name: "Nav default props." };
-export default NavBar;
