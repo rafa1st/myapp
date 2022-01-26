@@ -8,7 +8,7 @@ export default function PaiCompnent() {
   return (
     <div className="Body">
       <p>PaiComponent</p>
-      <h1>{pai}</h1>
+      <h2>{pai}</h2>
       <Select setProps={setPai} value={pai} />
     </div>
   );

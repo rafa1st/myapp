@@ -1,7 +1,5 @@
 import "../style/Button.css";
 
-function ButtonDecrease() {
+export default function ButtonDecrease() {
   return <button className="buttonDecrease">-</button>;
 }
-
-export default ButtonDecrease;

@@ -2,25 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
 import "./index.css";
-import Header from "./components/Header";
+//components
 import App from "./components/App";
-import Body from "./components/Body";
-import MyComponent from "./components/MyComponent";
-import TodoApp from "./components/TodoApp";
-import Counter from "./components/Counter";
-import NavBar from "./components/NavBar";
-import PaiComponent from "./components/PaiComponent";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
-    <NavBar />
     <App />
-    <Body />
-    <TodoApp />
-    <PaiComponent />
-    <MyComponent />
-    <Counter />
   </React.StrictMode>,
   document.getElementById("root")
 );

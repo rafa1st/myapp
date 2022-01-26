@@ -1,0 +1,13 @@
+.BasicStyle {
+    background-color: #282c34;
+    color: white;
+    
+}
+
+.BasicStyle p {
+    text-align: left;
+}
+
+.BasicStyle h1 {
+    text-align: center;
+}

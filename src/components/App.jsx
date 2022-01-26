@@ -1,15 +1,24 @@
-import "../style/App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+//pages
+import Home from "../pages/Home";
+import Layout from "../pages/Layout";
+import TestPage from "../pages/TestPage";
+import Contact from "../pages/Contact";
+import NoPage from "../pages/NoPage";
+import TodoPage from "../pages/TodoPage";
 
-
-function App() {
+export default function App() {
   return (
-    <div>
-      <header className="App-header">
-        <p>this is header</p>
-        <h1>Hello World!</h1>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="testpage" element={<TestPage />} />
+          <Route path="todo" element={<TodoPage/>}></Route>
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;
