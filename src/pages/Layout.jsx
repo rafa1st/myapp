@@ -15,6 +15,9 @@ const Layout = () => {
             <Link to="/todo">TodoApp</Link>
           </li>
           <li>
+            <Link to="/whatsapp">Whatsapp</Link>
+          </li>
+          <li>
             <Link to="/contact">Contact</Link>
           </li>
 

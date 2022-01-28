@@ -1,17 +1,18 @@
-//import { useState, useContext } from 'react';
+import { useContext } from "react";
+import CounterContext from "../context/Context";
+//styles
 import "../style/Button.css";
 
-export default function ButtonIncrease({setProps, value}) {
-  const increment = () => {setProps(value+1)};
+export default function ButtonIncrease() {
+  const [value, setValue] = useContext(CounterContext);
+
+  const increment = () => {
+    setValue(value + 1);
+  };
   return (
     <>
       <p>esse é o valor que ele pega = {value}</p>
-      <p>esse é o valor do counter = </p>
-      <button
-        type="button"
-        className="buttonIncrease"
-        onClick={increment}
-      >
+      <button type="button" className="buttonIncrease" onClick={increment}>
         +
       </button>
     </>
