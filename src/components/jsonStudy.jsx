@@ -1,29 +1,37 @@
 import { useState } from "react";
+import messages from "../messages.json";
 
-const options = { msg1: "message1", msg2: "message2", msg3: "message3 teste de mensagem colocando muita coisa aqui" };
+const messageList = messages;
 
 export default function ThirteenFriday() {
-  const [message, setMessage] = useState(options);
-  
+  const [message, setMessage] = useState("sem mensagem");
 
-  /*const handleChange = (e) => {
-    e.preventDefault();
+  const handleChange = (e) => {
     setMessage(e.target.value);
   };
- */
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(message);
+  };
+
   return (
     <>
       <h1>Json test</h1>
-      <p>{message.msg3}</p>
-      {/*       <select name="select" value={message} onChange={handleChange}>
-        <option value="">Selecione uma mensagem</option>
-        {options.map((message) => (
-          <option key={message.items} value={message.text}>
-            {message}
-          </option>
-        ))}
-      </select>
- */}
+      <h2>Text="{message}"</h2>
+      <form onSubmit={handleSubmit}>
+        <select
+        name="select"
+        value={message}
+        onChange={handleChange}>
+          <option>selecione a mensagem</option>
+          {messageList.map((message) => (
+            <option key={message} value={message}>
+              {message}
+            </option>
+          ))}
+        </select>
+        <input type="submit" />
+      </form>
     </>
   );
 }

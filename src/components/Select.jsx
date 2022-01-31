@@ -1,6 +1,6 @@
 const techs = ["ReactJS", "NextJS", "NodeJS", "TypeScript"];
 
-export default function Select({ setProps, value }) {
+export default function Select({ value, setProps}) {
   return (
     <select
       name="select"

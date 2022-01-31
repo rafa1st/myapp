@@ -16,7 +16,7 @@ export default function WhatsHandle() {
   };
 
   return (
-    <div>
+    <div>      
       <form onSubmit={handleSubmit}>
         <label>Número:</label>
         <input
