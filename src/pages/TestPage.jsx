@@ -1,4 +1,5 @@
-import Counter from "../components/Counter";
+import ThirteenFriday from "../components/jsonStudy";
+//styles
 import "../style/BasicStyle.css";
 
 export default function TestPage() {
@@ -6,7 +7,7 @@ export default function TestPage() {
     <div className="BasicStyle">
       <h1>Test Page</h1>
       <p>test of Component</p>
-      <Counter />
+      <ThirteenFriday />
     </div>
   );
 }
