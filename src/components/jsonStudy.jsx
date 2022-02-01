@@ -15,8 +15,7 @@ export default function ThirteenFriday() {
   };
 
   return (
-    <>
-      <h1>Json test</h1>
+    <>      
       <h2>Text="{message}"</h2>
       <form onSubmit={handleSubmit}>
         <select

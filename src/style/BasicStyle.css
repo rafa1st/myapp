@@ -1,12 +1,38 @@
-.BasicStyle {
+body {
   background-color: #282c34;
   color: white;
 }
 
-.BasicStyle h1 {
+h1 {
   text-align: center;
 }
 
-.BasicStyle p {
+p {
   text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #4e5665;
+}
+
+li {
+  float: left;  
+}
+
+a:link,
+a:visited {
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+a:hover {
+  background: rgb(50, 50, 50);
+  color: lightblue;
 }

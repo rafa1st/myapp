@@ -11,6 +11,7 @@ class TodoApp extends React.Component {
   render() {
     return (
       <div>
+        <h1>Todo-App</h1>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="new-todo">O que precisa ser feito?</label>
           <br />
