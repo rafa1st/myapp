@@ -23,7 +23,12 @@ class TodoApp extends React.Component {
           <button>Adicionar #{this.state.items.length + 1}</button>
         </form>
         <h3>Tarefas</h3>
-        <TodoList items={this.state.items} />
+
+        <ol>
+          {this.state.items.map((item) => (
+            <li key={item.id}>{item.text}</li>
+          ))}
+        </ol>
       </div>
     );
   }
@@ -31,7 +36,7 @@ class TodoApp extends React.Component {
   handleChange(e) {
     this.setState({ text: e.target.value });
   }
-
+  
   handleSubmit(e) {
     e.preventDefault();
     if (this.state.text.length === 0) {
@@ -45,18 +50,7 @@ class TodoApp extends React.Component {
       items: state.items.concat(newItem),
       text: "",
     }));
-  }
-}
-
-class TodoList extends React.Component {
-  render() {
-    return (
-      <ul>
-        {this.props.items.map((item) => (
-          <li key={item.id}>{item.text}</li>
-        ))}
-      </ul>
-    );
+    console.log(this.state.items)
   }
 }
 

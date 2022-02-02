@@ -11,7 +11,7 @@ p {
   text-align: left;
 }
 
-ul {
+.layout ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -19,11 +19,11 @@ ul {
   background: #4e5665;
 }
 
-li {
-  float: left;  
+.layout li {
+  float: left;
 }
 
-a:link,
+.layout a:link,
 a:visited {
   color: white;
   padding: 14px 25px;
@@ -32,7 +32,12 @@ a:visited {
   display: block;
 }
 
-a:hover {
+.layout a:hover {
   background: rgb(50, 50, 50);
   color: lightblue;
+}
+
+.Menu {
+  float: right;
+  background: #6495ed;
 }

@@ -5,7 +5,7 @@ import "../style/BasicStyle.css";
 const Layout = () => {
   return (
     <>
-      <nav className="BasicStyle">
+      <nav className="layout">
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -23,10 +23,10 @@ const Layout = () => {
             <Link to="/select">Select</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>            
+            <Link to="/contact">Contact</Link>
           </li>
-          <li>
-            <Link style={{float: "right"}}to="#">Menu</Link>
+          <li className="Menu">
+            <Link to="#">Menu</Link>
           </li>
         </ul>
       </nav>
