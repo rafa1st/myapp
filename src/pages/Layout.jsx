@@ -1,11 +1,11 @@
 import { Outlet, Link } from "react-router-dom";
 
-import "../style/BasicStyle.css";
+import "../style/Layout.css";
 
 const Layout = () => {
   return (
     <>
-      <nav className="layout">
+      <nav>
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -30,7 +30,7 @@ const Layout = () => {
           </li>
         </ul>
       </nav>
-      <hr />
+      
       <Outlet />
     </>
   );

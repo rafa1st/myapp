@@ -50,7 +50,7 @@ class TodoApp extends React.Component {
       items: state.items.concat(newItem),
       text: "",
     }));
-    console.log(this.state.items)
+    
   }
 }
 

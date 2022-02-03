@@ -6,38 +6,12 @@ body {
 h1 {
   text-align: center;
 }
+h3 {
+  background: #fff;
+  color: #333;  
+  
+}
 
 p {
   text-align: left;
-}
-
-.layout ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background: #4e5665;
-}
-
-.layout li {
-  float: left;
-}
-
-.layout a:link,
-a:visited {
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-}
-
-.layout a:hover {
-  background: rgb(50, 50, 50);
-  color: lightblue;
-}
-
-.Menu {
-  float: right;
-  background: #6495ed;
 }

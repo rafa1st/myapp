@@ -1,0 +1,30 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #4e5665;
+}
+
+li {
+  float: left;
+}
+
+a:link,
+a:visited {
+  color: white;
+  padding: 8px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+a:hover {
+  background: rgb(50, 50, 50);
+  color: lightblue;
+}
+
+.Menu {
+  float: right;
+  background: #6495ed;
+}
