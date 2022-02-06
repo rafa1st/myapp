@@ -5,7 +5,7 @@ import "../style/Layout.css";
 const Layout = () => {
   return (
     <>
-      <nav>
+      <nav className="NavBar">
         <ul>
           <li>
             <Link to="/">Home</Link>

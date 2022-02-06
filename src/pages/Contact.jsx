@@ -1,8 +1,9 @@
+import TodoFuncional from "../components/TodoFuncional";
+
 const Contact = () => {
   return (
     <div>
-      <h1>Call me</h1>
-      <p>My contact phone</p>    
+      <TodoFuncional />
     </div>
   );
 };

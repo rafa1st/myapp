@@ -1,4 +1,4 @@
-ul {
+.NavBar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -6,11 +6,11 @@ ul {
   background: #4e5665;
 }
 
-li {
+.NavBar li {
   float: left;
 }
 
-a:link,
+.NavBar a:link,
 a:visited {
   color: white;
   padding: 8px 25px;
@@ -19,7 +19,7 @@ a:visited {
   display: block;
 }
 
-a:hover {
+.NavBar a:hover {
   background: rgb(50, 50, 50);
   color: lightblue;
 }
