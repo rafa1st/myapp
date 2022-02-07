@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: #4e5665;
+  background: #4e5665;  
 }
 
 .NavBar li {
@@ -22,9 +22,4 @@ a:visited {
 .NavBar a:hover {
   background: rgb(50, 50, 50);
   color: lightblue;
-}
-
-.Menu {
-  float: right;
-  background: #6495ed;
 }

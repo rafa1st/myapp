@@ -1,0 +1,24 @@
+{
+  "Toolbar Color": "66, 69, 90",
+  "Background Color": "35, 37, 51",
+  "Search Bar Color": "50, 54, 85",
+  "Tab Highlight Color": "255, 121, 198",
+  "Popup Text": "79, 250, 124",
+  "Toolbar Icons and Text": "189, 147, 249",
+  "Background Tab Text Color": "140, 234, 253",
+  "Search Text": "189, 147, 249",
+  "Popup Background": "25, 26, 33",
+
+  "dark": "25, 26, 33",
+  "pink": "255, 121, 198",
+  "green": "79, 250, 124",
+  "purple": "189, 147, 249",
+  "ciano": {
+    "rgb": "140, 234, 253",
+    "Hex": "8CEAFD"
+  },
+  "props": {
+    "rgb": "255, 184, 108",
+    "Hex": "FFB86C"
+  }
+}

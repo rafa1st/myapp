@@ -25,7 +25,7 @@ const Layout = () => {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
-          <li className="Menu">
+          <li style={{float: "right", background: "#6495ed"}}>
             <Link to="#">Menu</Link>
           </li>
         </ul>
