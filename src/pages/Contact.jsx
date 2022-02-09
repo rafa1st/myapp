@@ -1,9 +1,9 @@
-import TodoFuncional from "../components/TodoFuncional";
+import SheetForm from "../components/SheetForm";
 
 const Contact = () => {
   return (
     <div>
-      <TodoFuncional />
+      <SheetForm />
     </div>
   );
 };

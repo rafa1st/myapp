@@ -36,7 +36,7 @@ class TodoApp extends React.Component {
   handleChange(e) {
     this.setState({ text: e.target.value });
   }
-  
+
   handleSubmit(e) {
     e.preventDefault();
     if (this.state.text.length === 0) {
@@ -50,7 +50,6 @@ class TodoApp extends React.Component {
       items: state.items.concat(newItem),
       text: "",
     }));
-    
   }
 }
 

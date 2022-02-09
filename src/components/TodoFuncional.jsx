@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function TodoFuncional() {
   const [task, setTask] = useState({
-    id: [],
+    items: [],
     text: "",
   });
 
@@ -13,6 +13,14 @@ export default function TodoFuncional() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const newItem = {
+      text: task.text,
+      id: Date.now(),
+    };
+    setTask(() => ({
+      items: task.items.concat(newItem),
+      text: "",
+    }));
   };
   return (
     <div>
@@ -25,16 +33,9 @@ export default function TodoFuncional() {
           value={task.text}
           onChange={handleChange}
         />
-
-        <button>Adicionar # {task.id}</button>
+        <button>Adicionar # {task.items + 1}</button>
         <p>Tarefas:</p>
-        <ol>
-          <li>
-            {task.text} {task.id}
-          </li>
-          <li>tarefa2</li>
-          <li>tarefa3</li>
-        </ol>
+        <ol></ol>
       </form>
     </div>
   );
