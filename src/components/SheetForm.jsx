@@ -1,23 +1,23 @@
 export default function SheetForm() {
-  const cores = [];
-  let element = 1;
+  const result = []; //const que vai armazenar a array com os dados
+  const line = 41; //const que dá o valor inicial a linha
+  const loop = 30; //const que dá a quantidade de ciclos do laço
+  const columnA = "(E"; //const referente a coluna A
+  const columnB = "($I"; //const referente a coluna B
+  let lineUp = 0; //variável que aumenta o valor da linha inicial
 
-  for (let i = 0; i < 30; i++) {
-      console.log(cores)
-      cores.push(1);
-      element = cores + 1;
-      
-      
+  for (let i = 0; i < loop; i++) {
+    lineUp = line + i;
+    result.push(columnA + lineUp + ")*" + columnB + lineUp + ")+");
   }
 
   return (
     <div>
-      <h1>Hello World</h1>
-      <p>Linha {element}</p>
-
+      <h1>Form para Planilha Excel</h1>
+      <p>{result}</p>
       <ul>
-        {cores.map((cores) => (
-          <li key={cores.id}>{cores}</li>
+        {result.map((number) => (
+          <li key={number.toString()}>{number}</li>
         ))}
       </ul>
     </div>
