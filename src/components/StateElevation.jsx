@@ -3,13 +3,15 @@ import Nota from "./Nota";
 import Resultado from "./Resultado";
 
 export default function StateElevation() {
+  //usando 1 state com objeto
   const [notas, setNotas] = useState({
     nota1: 0,
     nota2: 0,
     nota3: 0,
     nota4: 0,
   });
-  /*  const [nota1, setNota1] = useState();
+  /* usando 4 states 
+  const [nota1, setNota1] = useState();
   const [nota2, setNota2] = useState();
   const [nota3, setNota3] = useState();
   const [nota4, setNota4] = useState(); */
