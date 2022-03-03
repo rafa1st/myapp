@@ -3,7 +3,7 @@ class Add {
     this.words = words;
   }
   //your code goes here
-  print = function () {
+  print = () => {
     let result = ["$"];
     for (let i = 0; i < this.words.length; i++) {
       result.push(this.words[i] + "$");
