@@ -8,8 +8,10 @@ export default function PaiComponent() {
   return (
     <>
       <p>PaiComponent</p>
-      <h2>Qual tecnologia? {pai}</h2>
+      <h2>Qual tecnologia?</h2>
       <Select setProps={setPai} value={pai} />
+      <p>{pai}</p>
+
     </>
   );
 }
